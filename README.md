@@ -33,4 +33,4 @@ THEN the saved events persist
 Mock-Up
 The following animation demonstrates the application functionality:
 
-![Goal Mockup](./assets/target-screen-shot)
+![Goal Mockup](./assets/target-screen-shot.png)
