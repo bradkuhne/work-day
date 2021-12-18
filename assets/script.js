@@ -1,7 +1,13 @@
 
 var NineAmEl = document.querySelector('#NineAm');
-
-
+var TenAmEl = document.querySelector('#TenAm');
+var ElevenAmEl = document.querySelector('#ElevenAm');
+var TwelvePmEl = document.querySelector('#TwelvePm');
+var OnePmEl = document.querySelector('#OnePm');
+var TwoPmEl = document.querySelector('#TwoPm');
+var ThreePmEl = document.querySelector('#ThreePm');
+var FourPmEl = document.querySelector('#FourPm');
+var FivePmEl = document.querySelector('#FivePm');
 
 // Variable for date at top
 var todayDateEl = document.querySelector('#currentDay');
@@ -150,15 +156,69 @@ if (currentHour < 9) {
             break;  
     };
 };
-var saveHandler = function (event) {
+var nineAmSaveHandler = function (event) {
     event.preventDefault();
-    console.log ("Inside saveHandler function");
+    var savedNineAmTask = document.getElementById("NineAmTask").value;
+    console.log ("This is the 9am task to be saved: " + savedNineAmTask);
+    localStorage.setItem("NineAm", savedNineAmTask);
+};
+var tenAmSaveHandler = function (event) {
+    event.preventDefault();
+    var savedTenAmTask = document.getElementById("TenAmTask").value;
+    console.log ("This is the 10am task to be saved: " + savedTenAmTask);
+    localStorage.setItem("TenAm", savedTenAmTask);
+};
+var elevenAmSaveHandler = function (event) {
+    event.preventDefault();
+    var savedElevenAmTask = document.getElementById("ElevenAmTask").value;
+    console.log ("This is the 11am task to be saved: " + savedElevenAmTask);
+    localStorage.setItem("ElevenAm", savedElevenAmTask);
+};
+var twelvePmSaveHandler = function (event) {
+    event.preventDefault();
+    var savedTwelvePmTask = document.getElementById("TwelvePmTask").value;
+    console.log ("This is the 12pm task to be saved: " + savedTwelvePmTask);
+    localStorage.setItem("TwelvePm", savedTwelvePmTask);
+};
+var onePmSaveHandler = function (event) {
+    event.preventDefault();
+    var savedOnePmTask = document.getElementById("OnePmTask").value;
+    console.log ("This is the 1pm task to be saved: " + savedOnePmTask);
+    localStorage.setItem("OnePm", savedOnePmTask);
+};
+var twoPmSaveHandler = function (event) {
+    event.preventDefault();
+    var savedTwoPmTask = document.getElementById("TwoPmTask").value;
+    console.log ("This is the 2pm task to be saved: " + savedTwoPmTask);
+    localStorage.setItem("TwoPm", savedTwoPmTask);
+};
+var threePmSaveHandler = function (event) {
+    event.preventDefault();
+    var savedThreePmTask = document.getElementById("ThreePmTask").value;
+    console.log ("This is the 3pm task to be saved: " + savedThreePmTask);
+    localStorage.setItem("ThreePm", savedThreePmTask);
+};
+var fourPmSaveHandler = function (event) {
+    event.preventDefault();
+    var savedFourPmTask = document.getElementById("FourPmTask").value;
+    console.log ("This is the 4pm task to be saved: " + savedFourPmTask);
+    localStorage.setItem("FourPm", savedFourPmTask);
+};
+var fivePmSaveHandler = function (event) {
+    event.preventDefault();
+    var savedFivePmTask = document.getElementById("FivePmTask").value;
+    console.log ("This is the 5pm task to be saved: " + savedFivePmTask);
+    localStorage.setItem("FivePm", savedFivePmTask);
 };
 
 
-
-console.log ("This is NineAmEL.id: " + NineAmEl)
-NineAmEl.addEventListener('click', saveHandler);
-
-
-
+// console.log ("This is NineAmEL.id: " + NineAmEl)
+NineAmEl.addEventListener('click', nineAmSaveHandler);
+TenAmEl.addEventListener('click', tenAmSaveHandler);
+ElevenAmEl.addEventListener('click', elevenAmSaveHandler);
+TwelvePmEl.addEventListener('click', twelvePmSaveHandler);
+OnePmEl.addEventListener('click', onePmSaveHandler);
+TwoPmEl.addEventListener('click', twoPmSaveHandler);
+ThreePmEl.addEventListener('click', threePmSaveHandler);
+FourPmEl.addEventListener('click', fourPmSaveHandler);
+FivePmEl.addEventListener('click', fivePmSaveHandler);
