@@ -1,10 +1,15 @@
 
+var NineAmEl = document.querySelector('#NineAm');
+
+
+
 // Variable for date at top
 var todayDateEl = document.querySelector('#currentDay');
 // console.log (todayDateEl);
 var todayDate = moment().format('dddd, MMMM DD, h:mm a') ;
     todayDateEl.textContent = todayDate;
 // console.log (todayDateEl.textContent);
+
 
 // Compare current hour to each row hour
 var currentHourAP = moment().format ('ha');
@@ -145,7 +150,15 @@ if (currentHour < 9) {
             break;  
     };
 };
+var saveHandler = function (event) {
+    event.preventDefault();
+    console.log ("Inside saveHandler function");
+};
 
+
+
+console.log ("This is NineAmEL.id: " + NineAmEl)
+NineAmEl.addEventListener('click', saveHandler);
 
 
 
