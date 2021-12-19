@@ -1,4 +1,3 @@
-
 var NineAmEl = document.querySelector('#NineAm');
 var TenAmEl = document.querySelector('#TenAm');
 var ElevenAmEl = document.querySelector('#ElevenAm');
@@ -8,6 +7,27 @@ var TwoPmEl = document.querySelector('#TwoPm');
 var ThreePmEl = document.querySelector('#ThreePm');
 var FourPmEl = document.querySelector('#FourPm');
 var FivePmEl = document.querySelector('#FivePm');
+
+
+// var NineAmTaskEl = document.querySelector('#NineAmTask'); 
+var TenAmTaskEl = document.querySelector('#TenAmTask');
+var ElevenAmTaskEl = document.querySelector('#ElevenAmTask');
+var TwelvePmTaskEl = document.querySelector('#TwelvePmTask');
+var OnePmTaskEl = document.querySelector('#OnePmTask');
+var TwoPmTaskEl = document.querySelector('#TwoPmTask');
+var ThreePmTaskEl = document.querySelector('#ThreePmTask');
+var FourPmTaskEl = document.querySelector('#FourPmTask');
+var FivePmTaskEl = document.querySelector('#FivePmTask');
+
+//Load local storage and present saved tasks
+var NineAmTaskEl = document.querySelector('#NineAmTask');
+var lsNineAm = localStorage.getItem("NineAm");
+if (lsNineAm) {
+    console.log ("Value of local storage get item NineAm is: " + lsNineAm );
+    NineAmTaskEl.textContent = lsNineAm;
+    console.log ("Value of NineAmTaskEl.label " + NineAmTaskEl.textContent);
+};
+
 
 // Variable for date at top
 var todayDateEl = document.querySelector('#currentDay');
@@ -157,6 +177,7 @@ if (currentHour < 9) {
     };
 };
 var nineAmSaveHandler = function (event) {
+    console.log (" Inside function:  Value of NineAmTaskEl.textContent " + NineAmTaskEl.textContent);
     event.preventDefault();
     var savedNineAmTask = document.getElementById("NineAmTask").value;
     console.log ("This is the 9am task to be saved: " + savedNineAmTask);
