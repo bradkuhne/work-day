@@ -24,10 +24,65 @@ var NineAmTaskEl = document.querySelector('#NineAmTask');
 var lsNineAm = localStorage.getItem("NineAm");
 if (lsNineAm) {
     console.log ("Value of local storage get item NineAm is: " + lsNineAm );
-    NineAmTaskEl.textContent = lsNineAm;
-    console.log ("Value of NineAmTaskEl.label " + NineAmTaskEl.textContent);
+    NineAmTaskEl.placeholder = lsNineAm;
+    console.log ("Value of NineAmTaskEl.placeholder " + NineAmTaskEl.placeholder);
 };
-
+var TenAmTaskEl = document.querySelector('#TenAmTask');
+var lsTenAm = localStorage.getItem("TenAm");
+if (lsTenAm) {
+    console.log ("Value of local storage get item TenAm is: " + lsTenAm );
+    TenAmTaskEl.placeholder = lsTenAm;
+    console.log ("Value of TenAmTaskEl.placeholder " + TenAmTaskEl.placeholder);
+};
+var ElevenAmTaskEl = document.querySelector('#ElevenAmTask');
+var lsElevenAm = localStorage.getItem("ElevenAm");
+if (lsElevenAm) {
+    console.log ("Value of local storage get item ElevenAm is: " + lsElevenAm );
+    ElevenAmTaskEl.placeholder = lsElevenAm;
+    console.log ("Value of ElevenAmTaskEl.placeholder " + ElevenAmTaskEl.placeholder);
+};
+var TwelvePmTaskEl = document.querySelector('#TwelvePmTask');
+var lsTwelvePm = localStorage.getItem("TwelvePm");
+if (lsTwelvePm) {
+    console.log ("Value of local storage get item TwelvePm is: " + lsTwelvePm );
+    TwelvePmTaskEl.placeholder = lsTwelvePm;
+    console.log ("Value of TwelvePmTaskEl.placeholder " + TwelvePmTaskEl.placeholder);
+};
+var OnePmTaskEl = document.querySelector('#OnePmTask');
+var lsOnePm = localStorage.getItem("OnePm");
+if (lsOnePm) {
+    console.log ("Value of local storage get item OnePm is: " + lsOnePm );
+    OnePmTaskEl.placeholder = lsOnePm;
+    console.log ("Value of OnePmTaskEl.placeholder " + OnePmTaskEl.placeholder);
+};
+var TwoPmTaskEl = document.querySelector('#TwoPmTask');
+var lsTwoPm = localStorage.getItem("TwoPm");
+if (lsTwoPm) {
+    console.log ("Value of local storage get item OnePm is: " + lsTwoPm );
+    TwoPmTaskEl.placeholder = lsTwoPm;
+    console.log ("Value of TwoPmTaskEl.placeholder " + TwoPmTaskEl.placeholder);
+};
+var ThreePmTaskEl = document.querySelector('#ThreePmTask');
+var lsThreePm = localStorage.getItem("ThreePm");
+if (lsThreePm) {
+    console.log ("Value of local storage get item ThreePm is: " + lsThreePm );
+    ThreePmTaskEl.placeholder = lsThreePm;
+    console.log ("Value of ThreePmTaskEl.placeholder " + ThreePmTaskEl.placeholder);
+};
+var FourPmTaskEl = document.querySelector('#FourPmTask');
+var lsFourPm = localStorage.getItem("FourPm");
+if (lsFourPm) {
+    console.log ("Value of local storage get item FourPm is: " + lsFourPm );
+    FourPmTaskEl.placeholder = lsFourPm;
+    console.log ("Value of FourPmTaskEl.placeholder " + FourPmTaskEl.placeholder);
+};
+var FivePmTaskEl = document.querySelector('#FivePmTask');
+var lsFivePm = localStorage.getItem("FivePm");
+if (lsFivePm) {
+    console.log ("Value of local storage get item FivePm is: " + lsFivePm );
+    FivePmTaskEl.placeholder = lsFivePm;
+    console.log ("Value of FivePmTaskEl.placeholder " + FivePmTaskEl.placeholder);
+};
 
 // Variable for date at top
 var todayDateEl = document.querySelector('#currentDay');
